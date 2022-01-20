@@ -1,0 +1,13 @@
+body {background-color: rgb(238, 212, 180);}
+.haeding1 {font-size: 30px; color: darkgray;}
+.text1 {
+    width: 455px;
+    padding: 10px 10px 40px 40px;
+}
+.haeding11 {font-size: 15px; color: blueviolet;}
+.lista1 {
+    padding: 10px 10px 40px 40px;
+    background-image: url("img/1\ The\ witcher\ -\ avatar\ 100x100.png");
+    background-repeat: repeat-x;
+    background-position: center;
+}
