@@ -11,11 +11,11 @@ function calculateTriangleArea(a, height) {
 
 // Wywołanie:
 const result1 = calculateTriangleArea(2, 3);
-console.log("Pole trójkąta o dlugosci ", a, " i wysokosci: ",h, " to ", result1); //  3
+console.log("Pole trójkąta o dlugosci ", 2, " i wysokosci: ",3, " to ", result1); //  3
 const result2 = calculateTriangleArea(4, 6);
-console.log("Pole trójkąta o dlugosci ", a, " i wysokosci: ",h, " to ", result2); //  12
+console.log("Pole trójkąta o dlugosci ", 4, " i wysokosci: ",6, " to ", result2); //  12
 const result3 = calculateTriangleArea(4, 4);
-console.log("Pole trójkąta o dlugosci ", a, " i wysokosci: ",h, " to ", result3); //  8
+console.log("Pole trójkąta o dlugosci ", 4, " i wysokosci: ",4, " to ", result3); //  8
 
 // -----------------------------------------
 
