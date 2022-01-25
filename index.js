@@ -43,3 +43,73 @@ console.log("wynik mnożenia ",result, result2, result3)
 if (1<0){
 console.log ("jestem w if", 1>0)
 }
+const mydiv=document.getElementById("ab1")
+console.log(mydiv);
+let counter=0;
+mydiv.innerHTML=counter;
+function addone()
+{
+    // if (counter<10)
+    // {
+    //     counter=counter+2
+    // }else if(counter>=10&&counter<=20){
+    //     counter=counter+3
+    // }
+    // else{
+    // counter=counter+4
+    // }
+    switch(counter){
+        case (counter<10):{
+            console.log("xsd")
+            counter=counter+2
+            break;
+        }
+        case (counter>=10&&counter<=20):{
+            counter=counter+3
+            break;
+        
+        }default:{
+            console.log("cokolwiek")
+            counter=counter+4
+        }
+    }
+
+
+    mydiv.innerHTML=counter;
+    console.log("test")
+};
+function minusone(){
+    
+    counter=counter-2
+    mydiv.innerHTML=counter;
+    console.log("test")
+};
+
+switch(3){
+    case 5:{
+        console.log("switch ",5)
+        break;
+    }
+    case 7:{
+        console.log("switch ",7)
+        break;
+    }
+    case 10:{
+        console.log("switch ",10)
+        break;
+    }default:{
+        console.log("dupa")
+    }
+}
+for (let index = 0; index <= 5; index++) {
+    console.log("index", index);
+    
+}
+console.log(emptyArray)
+for (let index = 0; index < emptyArray.length; index++) {
+    if (index%2 !==0) {
+        const element = emptyArray[index];
+        console.log("wynik", index,  element)
+    }
+    
+}
