@@ -85,3 +85,22 @@ tom.hasOwnProperty("age"); / // zwraca true | false
 
 console.log("Ma wzrost", tom.hasOwnProperty("age"));
 console.log("Wzrost Tomasza", tom.height);
+
+
+// Zadania do wykonania
+
+// 1. Zadeklaruj obiekt o nazwie car i polach: 
+/**
+ * age = 23,
+ * brand = "Volvo"
+ * name = "v60"
+ * mileage 124000
+ * color "red"
+ */
+
+// 2. Wypisz w konsoli "Hello <name>" w miejsce name wstaw wartość z pola "name" obiektu car
+// 3. Wypisz w konsoli "Hello <name>" jezeli obiekt posiada pole "name", jezeli nie to wypisz "Hello!". Uzyj metody <object>.hasOwnProperty("name")
+// 4. Wypisz wszystkie właściwości obiektu car za pomocą metody Object.keys(mojobiekt)
+// 5. Wypisz wszystkie wartości obiektu car za pomocą metody Object.values(mojobiekt)
+// 6. Napisz funkcje która wyświetli tylko pola typu number z przekazanego w parametrze obiektu. 
+// Uzyj Object.keys lub Object.values
