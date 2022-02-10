@@ -90,3 +90,58 @@ cpuDigitalParam(processor);
 
 console.log("any " + "problem")
 console.log(Number.isInteger(2017));
+
+const arry1 = [2,5,6,3,9,2,1,4,6];
+
+arry1.filter(value => value<=3);  //zapis strzałkowy
+
+arry1.filter(function(value){
+    if (value <=3){
+    return true
+    }
+    return false
+})
+
+function textUp (text){ //to jest funkcja która zwraca poprawiony text jako string
+    return text.toUpperCase()
+}
+
+function textUp2(text) { //to jest funkcja która nie zwraca nic bo nie ma return
+    text.toUpperCase()
+}
+
+
+const txt = "teSt malYch wIelkicH liter";
+
+function textDown(text) {
+    return text.toLowerCase()
+}
+
+const lowerTxt = textDown(txt)
+console.log(lowerTxt);
+
+function replaceTxt(text) {
+    return text.replaceAll("e", "!")
+    
+}
+console.log(replaceTxt(lowerTxt));
+
+function firstToUpper(ftu){
+const gui = ftu.split(" ")
+const result = [];
+for (let index = 0; index < gui.length; index++) {
+    const word = gui[index];
+   const wrd = word[0].toUpperCase()+word.slice(1);
+    result.push(wrd);
+    
+}
+
+return result.join(" ")
+
+
+}
+
+console.log(firstToUpper(txt));
+
+const oneliner = (txt) => txt.split(" ").map(x=>x[0].toUpperCase()+x.slice(1)).join(" ")
+console.log(oneliner(txt))
