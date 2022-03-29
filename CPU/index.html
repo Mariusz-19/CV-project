@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPU</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <Div class="title">
+        <div class="cpuimg">
+        <img src="img/cpuicon.PNG" class="cpuIcn">
+        </div>
+    </Div>
+    <div>
+        <H1>CPU Parameter List</H1>
+    </div>
+    <form id="cpuform" action="">
+    <div id="selector" class="selector">
+            <select name="Model:" id="model1" class="model">
+                <option value="empty">Brand of CPU</option>
+                <option>Intel</option>
+                <option>AMD</option>
+              </select>
+            <select name="Model:" id="model" class="model">
+                <option value="empty">Model of CPU</option>
+                <option value="Ryzen 3">Ryzen 3 4100</option>
+                <option value="Ryzen 5">Ryzen 5 5500</option>
+                <option value="Ryzen 5">Ryzen 5 5600</option>
+                <option value="Ryzen 5">Ryzen 5 5600G</option>
+                <option value="Ryzen 7">Ryzen 7 5800X3D</option>
+                <option value="Ryzen 7">Ryzen 7 5700G</option>
+                <option value="Ryzen 9">Ryzen 9 5950X</option>
+                <option value="Threadripper">Threadripper 1900X</option>
+                <option value="Threadripper">Threadripper 3970X</option>
+                <option value="Threadripper">Threadripper 3990X</option>
+                <option value="Core i3">Core i3 10320</option>
+                <option value="Core i5">Core i5 11400</option>
+                <option value="Core i5">Core i5 11600</option>
+                <option value="Core i5">Core i5 11600FK</option>
+                <option value="Core i5">Core i5 11600T</option>
+                <option value="Core i7">Core i7 11700KF</option>
+                <option value="Core i7">Core i7 10700K</option>
+                <option value="Core i9">Core i9 10900KF</option>
+                <option value="Core i9">Core i9 11900KF</option>
+                <option value="Xeon">Xeon E-2186G</option>
+            </select>
+            <select name="coreCount" id="coreCount" class="model">
+                <option value="empty">Number of cores</option>
+                <option value="4">4</option>
+                <option value="6">6</option>
+                <option value="8">8</option>
+                <option value="10">10</option>
+                <option value="16">16</option>
+                <option value="32">32</option>
+                <option value="64">64</option>
+            </select>
+            <select name="threadCount" id="threadCount" class="model">
+                <option value="empty">Numbers of threads</option>
+                <option value="8">8</option>
+                <option value="12">12</option>
+                <option value="16">16</option>
+                <option value="20">20</option>
+                <option value="32">32</option>
+                <option value="64">64</option>
+                <option value="128">128</option>
+            </select>
+            <select name="VGA" id="VGA" class="model">
+                <option value="empty">VGA</option>
+                <option value="haveVga">YES</option>
+                <option value="haveNoVga">NO</option>
+            </select>
+            <select name="baseClck" id="baseClck" class="model">
+            <option value="empty">Base clock</option>
+            <option value="moreThan1GHz">>1GHz</option>
+            <option value="moreThan2GHz">>2GHz</option>
+            <option value="moreThan3GHz">>3GHz</option>
+            <option value="moreThan4GHz">>4GHz</option>
+            </select>
+            <select name="maxTrbClk" id="maxTrbClk" class="model">
+                <option value="empty">Max Turbo Core</option>
+                <option value="moreThan3GHz">>3GHz</option>
+                <option value="moreThan4GHz">>4GHz</option>
+                <option value="moreThan5GHz">>5GHz</option>
+            </select>
+        </div>
+        </div>
+            <div>
+                <button class="button" type="submit">Find Your CPU</button>
+            </div>
+        </form>
+    
+    <div class="cptbl">
+    <p>Your CPU compatible list:</p>
+    </div>
+<script src="index.js"></script>
+</body>
+
+</html>
