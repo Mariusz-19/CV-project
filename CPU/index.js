@@ -2,6 +2,7 @@ let formInstance = document.getElementById("cpuform");
 const coreCountInstance = document.getElementById("coreCount");
 const modelSelect = document.getElementById("model");
 const brandSelect = document.getElementById("brand");
+const threadSelect = document.getElementById("threadCount");
 
 const cpus = [
   { name: "Select Model", brand: "Select Brand", cores: 4 },
@@ -105,11 +106,11 @@ const brands = ["Select brand", "Intel", "AMD"];
 //get element brand from html (ID=brand) 
 let br = document.getElementById("brand");
 for (var i = 0; i < brands.length; i++) {
-  const elem = brands[i]
-let opt = document.createElement("option");
+  const elem = brands[i] //sprawdź tabelę brands
+let opt = document.createElement("option"); 
     opt.value = elem;
     opt.innerHTML = elem;
-    br.appendChild(opt);
+    br.appendChild(opt); //dodaj opcje w html brandsów
     //console.log(elem);
 }
 
@@ -133,7 +134,34 @@ if (event.target.value==="AMD") {
  addCpusOptions(result);
 }
 
-
-
 br.addEventListener("change", handleBrandChange);
 
+const threads = [8, 12, 16, 20, 32, 64, 128] //create array for threads
+
+//get element brand from html (ID=threadCount) 
+let tr = document.getElementById("threadCount");
+for (var i = 0; i < threads.length; i++) {
+  const elem = threads[i]
+let opt = document.createElement("option");
+    opt.value = elem;
+    opt.innerHTML = elem;
+    tr.appendChild(opt);
+    console.log(elem);
+}
+
+  function addThreadOptions(itemsArr) {
+    removeAllChildNodes(threadSelect);
+    for (let i = 0; i < itemsArr.length; i++) {
+      const elem = itemsArr[i];
+      let opt = document.createElement("option");
+      opt.value = elem.name;
+      opt.innerHTML = elem.name;
+      threadSelect.appendChild(opt);}
+    }
+    addThreadOptions(cpus);
+
+    function handleThreadChange(event) {
+      const result = getCpusForThread(cpus, parseInt(event.target.value));
+      addCpusOptions(result);}
+console.log(tr);
+      tr.addEventListener("change", handleBrandChange);
